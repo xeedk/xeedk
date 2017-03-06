@@ -1,0 +1,65 @@
+{% load static from staticfiles %}
+
+<header>
+    <!-- Header Top Display In large and Tablet Device -->
+    <div class="header-top hide-on-small-only">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 col m5 col s12">
+                    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+
+                </div>
+                <div class="col l4 col m3 col s12">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="/"><img src="images/material-logo.png" alt="Logo"></a>
+                    </div>
+                </div>
+                <div class="col l4 col m4 col s12 pull-right">
+                    <!-- Search Button -->
+                    <form class="searchbox">
+                        <input type="text" placeholder="Type and Press Enter" name="search" class="searchbox-input" required>
+                        <input type="submit" class="searchbox-submit">
+                        <span class="searchbox-icon"><i class="mdi-action-search"></i></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header top Display On Mobile -->
+    <div class="header hide-on-med-and-up">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col l4 col m5 col s2">
+                        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                    </div>
+
+
+                    <div class="col l4 col m4 col s2">
+                    <!-- Search Button -->
+                        <form class="searchbox">
+                            <input type="text" placeholder="Type and Press Enter" name="search" class="searchbox-input" required>
+                            <input type="submit" class="searchbox-submit">
+                            <span class="searchbox-icon"><i class="mdi-action-search"></i></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col l4 col m4 col s12">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="/"><img src="images/material-logo.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>

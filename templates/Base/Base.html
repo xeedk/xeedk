@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{% load static from staticfiles %}
+
+    <html lang="en">
+        <!-- Html Head -->
+
+        {% include "Base/Partials/Head.html" %}
+
+         <body>
+
+        <!-- Body Header -->
+
+            {% include "Base/Partials/Header.html" %}
+
+        <!--  Navigation -->
+
+            {% include "Base/Partials/Navigation.html" %}
+
+
+        <!-- Main Wrapper -->
+        <div class="wrapper">
+            {% block content %} {% endblock %}
+
+        </div>
+
+
+
+        <!-- Footer -->
+            {% include "Base/Partials/Footer.html" %}
+
+  </body>
+</html>

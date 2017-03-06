@@ -1,0 +1,177 @@
+.xeeSlide {
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 29px;
+}
+.xeeSlide a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.xeeSlide .ps-current {
+    float: left;
+    width: 75%;
+    overflow: hidden;
+    height: inherit;
+    position: relative;
+    font-size: 1rem;
+}
+.xeeSlide.listOnTheLeft .ps-current {
+    float: right;
+}
+.xeeSlide .ps-current ul {
+    width: 100%;
+}
+.xeeSlide .ps-current li {
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    display: none;
+}
+.xeeSlide .ps-current img {
+    height: auto;
+    width: 100%;
+    display: block;
+    transition: margin-top 250ms linear;
+}
+.xeeSlide .ps-caption {
+    position: absolute;
+    width: 100%;
+    padding: 12px;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: 3;
+}
+ul.xeeSlide,
+.xeeSlide  ul {
+    float: right;
+    width: 25%;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+ul.xeeSlide.listOnTheLeft,
+.xeeSlide.listOnTheLeft > ul {
+    float: left;
+}
+ul.xeeSlide > li,
+.xeeSlide > .ps-list > li {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    opacity: 1 !important;
+    filter: alpha(opacity=60);
+    font-size: 0.8rem;
+    transition: opacity 200ms linear;
+}
+
+ul.xeeSlide > li:last-child,
+.xeeSlide > ul > li:last-child {
+    margin-bottom: 0;
+}
+ul.xeeSlide > li span,
+.xeeSlide > .ps-list > li span {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ul.xeeSlide > li:hover,
+.xeeSlide > ul > li:hover {
+    opacity: 1 !important;
+}
+ul.xeeSlide > li img,
+.xeeSlide > ul > li img {
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: margin-top 250ms linear;
+}
+.xeeSlide .ps-prevIcon {
+    border-color:transparent #fff transparent;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    display: block;
+}
+.xeeSlide .ps-nextIcon {
+    border-color:transparent #fff transparent;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    display: block;
+}
+.xeeSlide .ps-current .ps-prev {
+    background: rgba(0, 0, 0, 0.5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
+    border: 1px solid #777;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+    padding: 20px 20px 20px 17px;
+    left: 0;
+    top: 45%;
+    cursor: pointer;
+}
+.xeeSlide .ps-current .ps-next {
+    background: rgba(0, 0, 0, 0.5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
+    border: 1px solid #777;
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    padding: 20px 17px 20px 20px;
+    right: 0;
+    top: 45%;
+    cursor: pointer;
+}
+ul.xeeSlide.wide > li,
+.xeeSlide.wide > ul > li {
+    width: 100% !important;
+}
+.xeeSlide.narrow .ps-current {
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+}
+.xeeSlide.narrow .ps-current img {
+    width: 100%;
+    min-height: inherit;
+}
+.xeeSlide.narrow .ps-current,
+ul.xeeSlide.narrow,
+.xeeSlide.narrow > ul {
+    width: 100%;
+}
+ul.xeeSlide.narrow > li,
+.xeeSlide.narrow > .ps-list > li {
+    float: left;
+    min-height: 50px;
+    max-height: 70px;
+    min-width: 15%;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+ul.xeeSlide.narrow.listOnTheLeft > li,
+.xeeSlide.narrow.listOnTheLeft > ul > li {
+    float: right;
+}
+.xeeSlide.narrow .ps-caption {
+    padding: 8px;
+}
+.xeeSlide.narrow .ps-current .ps-prev {
+    padding: 15px 15px 15px 12px;
+    top: 40%;
+}
+.xeeSlide.narrow .ps-current .ps-next {
+    padding: 15px 12px 15px 15px;
+    top: 40%;
+}
